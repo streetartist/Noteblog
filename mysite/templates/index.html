@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>街头艺术家工作室主页</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="http://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.staticfile.org/angular.js/1.4.6/angular.min.js"></script>
+  <script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.staticfile.org/foundation/5.5.3/css/foundation.min.css">
+  <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/foundation/5.5.3/js/foundation.min.js"></script>
+  <script src="https://cdn.staticfile.org/foundation/5.5.3/js/vendor/modernizr.js"></script>
+  <style>
+  .fakeimg {
+      height: 200px;
+      background: #aaa;
+  }
+  </style>
+<body>
+<div class="off-canvas-wrap" data-offcanvas>
+  <div class="inner-wrap">
+    <nav class="tab-bar">
+      <section class="left-small">
+        <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+      </section>
+
+      <section class="middle tab-bar-section">
+        <h1 class="title">主页</h1>
+      </section>
+    </nav>
+
+    <aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list test">
+        <li><label>Heading</label></li>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+        <li><a href="#">Link 5</a></li>
+        <li><a href="#">Link 6</a></li>
+        <li><a href="#">Link 7</a></li>
+        <li><a href="#">Link 8</a></li>
+      </ul>
+    </aside>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>街头艺术家工作室主页<span class="badge badge-warning">beta</span></h1>
+  <p>街头艺术家工作室，在街头巷尾也有艺术！</p>
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">导航</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+        <a class="nav-link" href="#">链接</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">链接</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">链接</a>
+    </ul>
+  </div>
+</nav>
+    <div class="container" style="margin-top:30px">
+  <div class="row">
+      <a href="http://wpa.qq.com/msgrd?v=3&uin=494033201&site=qq&menu=yes" class="btn btn-info" role="button">加QQ</a>
+      <h1>本网站已被访问<span class="badge badge-pill badge-success">{{count}}</span>次</h1>
+
+    <div class="col-sm-4">
+      <h2>关于我</h2>
+      <h5>小游戏:</h5>
+      <div class="fakeimg">
+            <form action="" method="post" enctype="multipart/form-data">
+                请猜一个数：<input type="text" name="guess">
+                <input type="submit" value="提交">
+            </form>
+            <h2>{{say}}</h2>
+      </div>
+      <p>关于我的介绍..</p>
+      <!-- 按钮触发模态框 -->
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+	开始演示模态框
+</button>
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				<h4 class="modal-title" id="myModalLabel">
+					模态框（Modal）标题
+				</h4>
+			</div>
+			<div class="modal-body">
+				在这里添加一些文本
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+				</button>
+				<button type="button" class="btn btn-primary">
+					提交更改
+				</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+      <p>说明文本</p>
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="http://cloud.labsite.top">云</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://office.labsite.top">办公</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://codehub.labsite.top">论坛</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">禁用</a>
+        </li>
+      </ul>
+      <hr class="d-sm-none">
+    </div>
+    <div class="col-sm-8">
+      <script language="javascript" type="text/javascript">
+
+function btn_onclick()
+
+{
+
+try
+
+{
+
+var cmdWin =document.getElementById("txtre");//获取文本id
+
+var str="try{"+cmdWin.value+"} catch(e){alert('你的代码有错：'+e.description);}";//构造函数体,这里的e.description用来输出你输入的JavaScript代码的错误信息
+
+var cmd = new Function(str);//构造函数
+
+cmd(); //调用函数
+
+}
+
+catch(e)
+
+{
+
+alert("错误:"+e.description);//输出错误信息,这里用来处理本段JavaScript代码的错误信息
+
+}
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<!--用户界面，一文本框，一按钮 -->
+
+<div align="center" style="boeder-right:#000000 1px solid; boeder-top:#000 1px solid; border-left:#000 1px solid; width:310px;border-right:#000 1px solid;height:150px;background-color:#FF0">
+
+<textarea id="txtre" style="width:300px;height;150px">
+
+</textarea>
+
+<input id="btnTest" type="button" value="执行程序" onclick="return btn_onclick()" style="width:145ppx" />
+
+</div>
+      <h2>标题</h2>
+      <h5>副标题</h5>
+      <div class="fakeimg">
+              <h2>留言板</h2>
+              <p>您可以在此留言:</p>
+              <table class="pure-table">
+                            <thead>
+                <tr>
+                    <th>内容</th>
+                </tr>
+               </thead>
+               <tbody>
+                   {% for say in says %}
+                   <tr>
+                    <td>{{ say['text'] }}</td>
+                   </tr>
+                   {% endfor %}
+                  </tbody>
+                </table>
+            <form action="" method="post" enctype="multipart/form-data">
+                请输入：<input type="text" name="word">
+                <input type="submit" value="提交">
+            </form>
+        </div>
+
+        <h1>开发日志</h1>
+        <h1></h1>
+
+        <div class="fakeimg">
+            <h3>开发日志</h3>
+            <h4>11.21</h4>
+            <p>1.开始编写 2.编写奇怪的猜数游戏、访问次数统计、Helloworld</p>
+            <h4>11.22</h4>
+            <p>1.编写奇怪的留言板</p>
+        </div>
+
+        <h1>Hello world</h1>
+      <div class="fakeimg">
+            <div ng-app="">
+                <p>名字 : <input type="text" ng-model="name"></p>
+                <h1>Hello {{name}}</h1>
+                <p ng-bind="name"></p>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p>底部内容</p>
+</div>
+
+    <a class="exit-off-canvas"></a>
+</div>
+</div>
+<!-- 初始化 Foundation JS -->
+<script>
+$(document).ready(function() {
+    $(document).foundation();
+})
+</script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link href="http://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<article class="htmleaf-container">
+		<header class="htmleaf-header">
+			<h1>7种Material Design风格打开菜单按钮特效 <span>Material Action buttons</span></h1>
+			<div class="htmleaf-links">
+				<a class="htmleaf-icon icon-htmleaf-home-outline" href="http://www.htmleaf.com/" title="jQuery之家" target="_blank"><span> jQuery之家</span></a>
+				<a class="htmleaf-icon icon-htmleaf-arrow-forward-outline" href="http://www.htmleaf.com/css3/daohangcaidan/201510232700.html" title="返回下载页" target="_blank"><span> 返回下载页</span></a>
+			</div>
+		</header>
+		<section class="model-0">
+		  <div class="float-btn-group">
+		    <button class="btn-float btn-triger pink"><i class="icon-bars"></i></button>
+		    <div class="btn-list"><a href="#" class="btn-float yellow"><i class="fa fa-search"></i></a><a href="#" class="btn-float blue"><i class="fa fa-cloud-download"> </i></a><a href="#" class="btn-float green"><i class="fa fa-paperclip">   </i></a><a href="#" class="btn-float purple"><i class="fa fa-line-chart"> </i></a></div>
+		  </div>
+		</section>
+		<section class="model-1">
+		  <div class="float-btn-group">
+		    <button class="btn-float btn-triger pink"><i class="icon-bars"></i></button>
+		    <div class="btn-list"><a href="#" class="btn-float yellow"><i class="fa fa-search"></i></a><a href="#" class="btn-float blue"><i class="fa fa-cloud-download"> </i></a><a href="#" class="btn-float green"><i class="fa fa-paperclip">   </i></a><a href="#" class="btn-float purple"><i class="fa fa-line-chart"> </i></a></div>
+		  </div>
+		</section>
+		<section class="model-2">
+		  <div class="float-btn-group">
+		    <button class="btn-float btn-triger pink"><i class="icon-bars"></i></button>
+		    <div class="btn-list"><a href="#" class="btn-float yellow"><i class="fa fa-search"></i></a><a href="#" class="btn-float blue"><i class="fa fa-cloud-download"> </i></a><a href="#" class="btn-float green"><i class="fa fa-paperclip">   </i></a><a href="#" class="btn-float purple"><i class="fa fa-line-chart"> </i></a></div>
+		  </div>
+		</section>
+		<section class="model-3">
+		  <div class="float-btn-group">
+		    <button class="btn-float btn-triger pink"><i class="icon-bars"></i></button>
+		    <div class="btn-list"><a href="#" class="btn-float yellow"><i class="fa fa-search"></i></a><a href="#" class="btn-float blue"><i class="fa fa-cloud-download"> </i></a><a href="#" class="btn-float green"><i class="fa fa-paperclip">   </i></a><a href="#" class="btn-float purple"><i class="fa fa-line-chart"> </i></a></div>
+		  </div>
+		</section>
+		<section class="model-4">
+		  <div class="float-btn-group">
+		    <button class="btn-float btn-triger pink"><i class="icon-bars"></i></button>
+		    <div class="btn-list"><a href="#" class="btn-float yellow"><i class="fa fa-search"></i></a><a href="#" class="btn-float blue"><i class="fa fa-cloud-download"> </i></a><a href="#" class="btn-float green"><i class="fa fa-paperclip">   </i></a><a href="#" class="btn-float purple"><i class="fa fa-line-chart"> </i></a></div>
+		  </div>
+		</section>
+		<section class="model-5">
+		  <div class="float-btn-group">
+		    <button class="btn-float btn-triger pink"><i class="icon-bars"></i></button>
+		    <div class="btn-list"><a href="#" class="btn-float yellow"><i class="fa fa-search"></i></a><a href="#" class="btn-float blue"><i class="fa fa-cloud-download"> </i></a><a href="#" class="btn-float green"><i class="fa fa-paperclip">   </i></a><a href="#" class="btn-float purple"><i class="fa fa-line-chart"> </i></a></div>
+		  </div>
+		</section>
+		<section class="model-6">
+		  <div class="float-btn-group">
+		    <button class="btn-float btn-triger pink"><i class="icon-bars"></i></button>
+		    <div class="btn-list"><a href="#" class="btn-float yellow"><i class="fa fa-search"></i></a><a href="#" class="btn-float blue"><i class="fa fa-cloud-download"> </i></a><a href="#" class="btn-float green"><i class="fa fa-paperclip">   </i></a><a href="#" class="btn-float purple"><i class="fa fa-line-chart"> </i></a></div>
+		  </div>
+		</section>
+		<footer class="related">
+		    <h3>如果你喜欢这个插件，那么你可能也喜欢:</h3>
+		    	<a href="http://www.htmleaf.com/css3/ui-design/201510162674.html">
+			  <img src="related/1.jpg" width="300" alt="简洁的material design风格用户登录界面设计"/>
+			  <h3>简洁的material design风格用户登录界面设计</h3>
+			</a>
+			<a href="http://www.htmleaf.com/html5/SVG/201509152574.html">
+			  <img src="related/2.jpg" width="300" alt="4种基于SVG的material design风格按钮点击波特效"/>
+			  <h3>4种基于SVG的material design风格按钮点击波特效</h3>
+			</a>
+		</footer>
+	</article>
+
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script>
+	$('.btn-triger').click(function () {
+	    $(this).closest('.float-btn-group').toggleClass('open');
+	});
+	</script>
+</body>
+</html>

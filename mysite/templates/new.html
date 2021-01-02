@@ -1,0 +1,18 @@
+<!-- extend base layout -->
+{% extends "base.html" %}
+{% block content %}
+<div class="blog">
+  <div class="conteudo">
+      <h1>新文章</h1>
+      <form action="" method="post" enctype="multipart/form-data">
+          <textarea cols="25" rows="5" name="text">内容</textarea>
+          <input value="标题" name="title"></input>
+          <input value="标签" name="tag"></input>
+          <input value="时间" name="time"></input>
+          <input value="作者" name="author"></input>
+
+          <input type="submit" value="提交">
+      </form>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><!--viewport meta元素控制移动端浏览器的宽度和缩放。为了自适应设备的宽度，需要加入该行-->
+    {% if title %}
+    <title>{{ title }} - 街头艺术家工作室</title>
+    {% else %}
+    <title>街头艺术家工作室</title>
+    {% endif %}
+
+<!-- Bootstrap4 -->
+
+<!-- CSS only -->
+<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.slim.min.js" ></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/popper.js/1.16.0/cjs/popper.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
+
+
+<!-- Foundation -->
+<link rel="stylesheet" href="https://cdn.staticfile.org/foundation/5.5.3/css/foundation.min.css">
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/foundation/5.5.3/js/foundation.min.js"></script>
+<script src="https://cdn.staticfile.org/foundation/5.5.3/js/vendor/modernizr.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/pure/2.0.3/pure-min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
+
+</head>
+<body>
+
+<!-- 网页小人-->
+<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+  <!--小帅哥： https://unpkg.com/live2d-widget-model-chitose@1.0.5/assets/chitose.model.json-->
+  <!--萌娘：https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json-->
+  <!--小可爱（女）：https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json-->
+  <!--小可爱（男）：https://unpkg.com/live2d-widget-model-haruto@1.0.5/assets/haruto.model.json-->
+  <!--初音：https://unpkg.com/live2d-widget-model-miku@1.0.5/assets/miku.model.json-->
+   <!-- 上边的不同链接显示的是不同的小人，这个可以根据需要来选择 下边的初始化部分，可以修改宽高来修改小人的大小，或者是鼠标移动到小人上的透明度，也可以修改小人在页面出现的位置。 -->
+  <script>
+    /*https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json*/
+    L2Dwidget.init({ "model": { jsonPath:
+          "https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json",
+        "scale": 1 }, "display": { "position": "right", "width": 110, "height": 150,
+        "hOffset": 0, "vOffset": -20 }, "mobile": { "show": true, "scale": 0.5 },
+      "react": { "opacityDefault": 0.8, "opacityOnHover": 0.1 } });
+  </script>
+
+
+<!-- 最外层div：页面布局 -->
+<div class="off-canvas-wrap" data-offcanvas>
+  <!-- 内部元素: "工具栏" 内容 (图标, 链接, 描述内容等)-->
+  <div class="inner-wrap">
+    <nav class="tab-bar">
+      <section class="left-small">
+        <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+      </section>
+
+      <section class="middle tab-bar-section">
+        <h1 class="title">街头艺术家工作室</h1>
+      </section>
+    </nav>
+
+    <!-- 滑动菜单 -->
+    <aside class="left-off-canvas-menu">
+      <!-- Add links or other stuff here -->
+      <ul class="off-canvas-list test">
+        <li><label>Heading</label></li>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+      </ul>
+    </aside>
+
+    <!-- 主要内容 -->
+    <section class="main-section">
+<header class="header">
+  <ul>
+    <li class="cor-1"></li>
+    <li class="cor-2"></li>
+    <li class="cor-3"></li>
+    <li class="cor-4"></li>
+    <li class="cor-5"></li>
+  </ul>
+  </header>
+<div class="wrap">
+
+<div class="widget">
+  <h1>街头艺术家工作室主页  <span class="badge badge-pill badge-info">Beta</span></h1>
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">导航</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+        <a class="nav-link" href="#">链接</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">链接</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">链接</a>
+    </ul>
+  </div>
+</nav>
+
+<nav class="menu">
+  <ul>
+    <li>
+      <a href="/">主页</a>
+    </li>
+    <li>
+      <a href="/archive">文章</a>
+    </li>
+    <li>
+      <a href="/login">登录</a>
+    </li>
+    <li>
+        <a href="/help">帮助我们</a>
+    </li>
+  </ul>
+  </nav>
+    <aside class="sidebar">
+
+      <div class="widget">
+          <h1>{{ welcome }}</h1>
+          <a class="pure-button pure-button-primary" href="http://wpa.qq.com/msgrd?v=3&uin=494033201&site=qq&menu=yes">加QQ</a>
+          <h2>本网站已被访问<span class="badge badge-pill badge-success">{{count}}</span>次</h2>
+      </div>
+
+      <div class="widget">
+          <h2>留言板</h2>
+              <p>您可以在此留言:</p>
+              <table class="pure-table pure-table-horizontal">
+               <thead>
+                <tr>
+                    <th>内容</th>
+                </tr>
+               </thead>
+               <tbody>
+                   {% for say in says %}
+                   <tr>
+                    <td>{{ say.massage }}</td>
+                   </tr>
+                   {% endfor %}
+                  </tbody>
+                </table>
+            <form action="" method="post" enctype="multipart/form-data">
+                请输入：<input type="text" name="word">
+                <input type="submit" class="btn btn-info" value="提交">
+            </form>
+      </div>
+
+      <div class="widget">
+      <h2>测试</h2>
+      <p>这是一段测试文本</p>
+      </div>
+  </aside>
+
+<div class="blog">
+  <div class="conteudo">
+    <h1>点击“文章”查看文章</h1>
+  </div>
+</div>
+
+{% block content %}{% endblock %}
+
+</div>
+    </section>
+
+    <!-- 关闭菜单 -->
+    <a class="exit-off-canvas"></a>
+
+  </div> <!-- 结束内部内容 -->
+</div> <!-- 结束滑动菜单 -->
+
+<!-- 初始化 Foundation JS -->
+<script>
+$(document).ready(function() {
+    $(document).foundation();
+})
+</script>
+</body>
+</html>

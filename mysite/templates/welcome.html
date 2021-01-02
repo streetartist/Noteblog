@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!--viewport meta元素控制移动端浏览器的宽度和缩放。为了自适应设备的宽度，需要加入该行-->
+    {% if title %}
+    <title>{{ title }} - 雪忆</title>
+    {% else %}
+    <title>雪忆</title>
+    {% endif %}
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/pure/2.0.3/pure-min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='welcome.css') }}">
+</head>
+<body>
+<div id="wrapper">
+  <div id="info">
+    <div id="info-content">
+      <h1><strong>Andrew Liu</strong> 雪  忆</h1>
+      <p>雪忆, 如雪般单纯, 冷静思考.</p>
+    </div>
+  </div>
+</div><!-- #wrapper -->
+</body>
+</html>

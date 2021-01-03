@@ -37,7 +37,7 @@ db.create_tables([Chat, Posts, User])
 #p = Posts(tag='测试', time="2020-12-26", author = "测试", content = "#第一个Markdown测试文章",title = "测试MD文章")
 #p.save()
 
-#u = User(name="admin",password="wenjiaxian",type="admin")
+#u = User(name="admin",password="123456",type="admin")
 #u.save()
 
 app = Flask(__name__, static_folder='static')

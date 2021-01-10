@@ -3,6 +3,8 @@ A woderful python blog framework
 
 Noteblog（结客）是一个使用Python和Flask编写的博客系统
 
+# 因为经常在PythonAnywhere上写，所以Github上的代码更新有点不及时。大家可以关注我的网页效果的变化。
+
 # Demo
 
 街头艺术家工作室

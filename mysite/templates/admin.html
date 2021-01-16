@@ -1,0 +1,15 @@
+<!-- extend base layout -->
+{% extends "base.html" %}
+{% block content %}
+<div class="blog">
+  <div class="conteudo">
+      <h1>管理页面</h1>
+      {% if not welcome %}
+        <h2>您没有访问权限</h2>
+      {% else %}
+        <h2>欢迎！</h2>
+        <a href="/new">创建新文章</a>
+      {%endif%}
+  </div>
+</div>
+{% endblock %}

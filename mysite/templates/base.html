@@ -9,8 +9,16 @@
     <title>街头艺术家工作室</title>
     {% endif %}
 
-<!-- Bootstrap4 -->
+<!-- VUE -->
+<!-- 生产环境版本，优化了尺寸和速度 -->
+<!--<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 
+
+<!-- TailWindCss -->
+<!--<link href="https://cdn.bootcdn.net/ajax/libs/tailwindcss/2.0.0-alpha.5/tailwind.min.css" rel="stylesheet">
+
+
+<!-- Bootstrap4 -->
 <!-- CSS only -->
 <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
 <!-- JS, Popper.js, and jQuery -->
@@ -26,8 +34,8 @@
 <script src="https://cdn.staticfile.org/foundation/5.5.3/js/vendor/modernizr.js"></script>
 
 
-    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/pure/2.0.3/pure-min.css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
+<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/pure/2.0.3/pure-min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
 
 </head>
 <body>
@@ -124,9 +132,27 @@
     <li>
         <a href="/help">帮助我们</a>
     </li>
+    <li>
+        <a href="/admin">管理</a>
+    </li>
   </ul>
   </nav>
+
+  <br>
+  {% block content %} {% endblock %}
+
     <aside class="sidebar">
+      {% for i in tool %}
+            <div class="widget">
+                {% autoescape off %}
+                    <h1>{{ i.name }}</h1>
+
+                    {{ i.name|module }}
+
+                    {{ i.html }}
+                {% endautoescape %}
+            </div>
+      {% endfor %}
 
       <div class="widget">
           <h1>{{ welcome }}</h1>
@@ -157,20 +183,7 @@
             </form>
       </div>
 
-      <div class="widget">
-      <h2>测试</h2>
-      <p>这是一段测试文本</p>
-      </div>
   </aside>
-
-<div class="blog">
-  <div class="conteudo">
-    <h1>点击“文章”查看文章</h1>
-  </div>
-</div>
-
-{% block content %}{% endblock %}
-
 </div>
     </section>
 
